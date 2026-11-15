@@ -102,7 +102,15 @@
         <h2 id="about-h">About</h2>
       </header>
 
-      <div class="section-body prose">
+      <div class="section-body about-grid">
+        <!-- PHOTO: save your photo as photo.jpg next to index.html (square or 4:5 portrait,
+             about 600px wide). Until that file exists, a framed "BK" monogram shows instead. -->
+        <figure class="portrait placeholder" data-label="add photo.jpg">
+          <span class="portrait-fallback" aria-hidden="true">BK</span>
+          <img src="photo.jpg" alt="Portrait of Benedict Kevin Karaya" width="480" height="600" loading="lazy" decoding="async">
+        </figure>
+
+        <div class="prose">
         <p class="lead">
           I'm Benedict, also <span class="mono">whsb3ne</span> online. I study computer science
           at Mount Kenya University, and I want to become a cybersecurity engineer who builds
@@ -125,6 +133,7 @@
           <p>Cybersecurity isn't about being perfect. It's about staying prepared.</p>
         </blockquote>
       </div>
+        </div>
     </section>
 
 

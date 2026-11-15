@@ -13,6 +13,20 @@
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
+  /* ---------- Portrait: fall back to the monogram if photo.jpg is missing ---------- */
+  var portrait = document.querySelector(".portrait");
+  var photo = portrait && portrait.querySelector("img");
+  function photoState() {
+    var ok = photo.complete && photo.naturalWidth > 0;
+    portrait.classList.toggle("is-empty", !ok);
+    portrait.classList.toggle("placeholder", !ok);
+  }
+  if (photo) {
+    photo.addEventListener("load", photoState);
+    photo.addEventListener("error", photoState);
+    if (photo.complete) photoState();
+  }
+
   /* ---------- Mobile menu ---------- */
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
