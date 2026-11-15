@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benedict Kevin Karaya · Cybersecurity</title>
+  <meta name="description" content="Benedict Kevin Karaya (whsb3ne): computer science student in Nairobi, Kenya, working toward cybersecurity engineering. Home SOC lab, CTF design, internships and lab write-ups.">
+  <meta name="theme-color" content="#0e1316">
+
+  <!-- The only external dependency: IBM Plex Sans (body) and IBM Plex Mono (labels).
+       The page falls back to system fonts if this fails to load. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!--
+    HOW TO EDIT
+    - All content lives in this file. Each section is marked with a big comment banner.
+    - Anything you still need to fill in has class="placeholder" and a comment starting with
+      "PLACEHOLDER:". Search this file for "PLACEHOLDER" to find every one.
+    - When you replace a placeholder, also remove its class="placeholder" so the dashed
+      outline and label disappear.
+  -->
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================== HEADER / NAV ============================== -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="mark" href="#top" aria-label="Benedict Kevin Karaya, back to top">
+        <span class="mark-prompt" aria-hidden="true">~/</span>whsb3ne
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-label">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#background">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#learning">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== 1. HERO ============================== -->
+    <section id="top" class="hero wrap" aria-labelledby="hero-name">
+      <div class="hero-text">
+        <p class="eyebrow">Computer science student · Nairobi, Kenya</p>
+        <h1 id="hero-name">Benedict Kevin Karaya</h1>
+        <p class="hero-line">
+          I'm working toward cybersecurity engineering: secure networks, hardened systems and
+          cloud environments. I learn by building labs, attacking them in isolation, and
+          documenting what the logs show.
+        </p>
+
+        <ul class="hero-links" aria-label="Profiles and email">
+          <li><a class="btn btn-primary" href="https://www.linkedin.com/in/benedictkaraya132" rel="me noopener">LinkedIn</a></li>
+          <li><a class="btn" href="mailto:benedictkaraya132@gmail.com">Email</a></li>
+          <li><a class="btn btn-quiet" href="https://github.com/whsb3ne" rel="me noopener">GitHub</a></li>
+        </ul>
+      </div>
+
+      <!-- The one terminal-style element on the page. Content is plain text so screen
+           readers get it as a short list; script.js only fades the lines in. -->
+      <figure class="terminal" aria-label="Summary in terminal style">
+        <div class="terminal-bar" aria-hidden="true">
+          <span></span><span></span><span></span>
+          <span class="terminal-title">whsb3ne@lab: ~</span>
+        </div>
+<pre class="terminal-body"><code><span class="t-line"><span class="t-prompt">$</span> whoami</span>
+<span class="t-line t-out">benedict · CS student · Nairobi</span>
+<span class="t-line"><span class="t-prompt">$</span> cat focus.txt</span>
+<span class="t-line t-out">network · cloud · system hardening</span>
+<span class="t-line"><span class="t-prompt">$</span> ls ~/labs</span>
+<span class="t-line t-out">home-soc-lab   incident-214</span>
+<span class="t-line t-out">cybersecurity-writeups</span>
+<span class="t-line"><span class="t-prompt">$</span> cat status</span>
+<span class="t-line t-out">tryhackme: top 5%</span>
+<span class="t-line t-out">studying:  Security+ · BTL1</span>
+<span class="t-line"><span class="t-prompt">$</span> <span class="t-cursor" aria-hidden="true"></span></span></code></pre>
+      </figure>
+    </section>
+
+
+    <!-- ============================== 2. ABOUT ============================== -->
+    <section id="about" class="section wrap" aria-labelledby="about-h">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">01</span>
+        <h2 id="about-h">About</h2>
+      </header>
+
+      <div class="section-body prose">
+        <p class="lead">
+          I'm Benedict, also <span class="mono">whsb3ne</span> online. I study computer science
+          at Mount Kenya University, and I want to become a cybersecurity engineer who builds
+          secure networks, systems and cloud environments.
+        </p>
+        <p>
+          Most of what I know I've learned by setting it up myself. I run a small SOC lab at home
+          where a Kali machine attacks a monitored Windows host and I work through what Wazuh
+          flags. I write up the TryHackMe rooms I complete so the reasoning is on record, not just
+          the answer. And with a friend, I designed and run a weekly beginner CTF for GDG on Campus at
+          Mount Kenya University, built around a single suspicious login at 2:14 AM.
+        </p>
+        <p>
+          I like understanding how systems and infrastructure actually work, and then how to
+          secure them. That comes from the ground up: before security I spent four months
+          installing and troubleshooting fibre connections in the field, and I'm now studying for
+          CompTIA Security+ and Blue Team Level 1 alongside my degree.
+        </p>
+        <blockquote class="pull">
+          <p>Cybersecurity isn't about being perfect. It's about staying prepared.</p>
+        </blockquote>
+      </div>
+    </section>
+
+
+    <!-- ============================== 3. EXPERIENCE & EDUCATION ============================== -->
+    <!-- Two timelines. Copy an <li> to add an entry; newest first. -->
+    <section id="background" class="section wrap" aria-labelledby="bg-h">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">02</span>
+        <h2 id="bg-h">Experience and education</h2>
+      </header>
+
+      <div class="section-body">
+        <h3 class="sub-label mono">Experience</h3>
+        <ol class="timeline">
+          <li>
+            <p class="timeline-when mono">Oct 2026 – present</p>
+            <div>
+              <h4>Co-organiser, Incident 2:14 CTF</h4>
+              <p class="muted">GDG on Campus, Mount Kenya University</p>
+              <p>Designed the story and challenges with a teammate, and run the CTF every week for first-time players.</p>
+            </div>
+          </li>
+
+          <li>
+            <p class="timeline-when mono">Mar – Apr 2026</p>
+            <div>
+              <h4>Cyber Security Analyst (intern)</h4>
+              <p class="muted">Future Interns · Nairobi County</p>
+              <ul class="duties">
+                <li>Ran vulnerability assessments and threat modelling on simulated systems.</li>
+                <li>Investigated security incidents in virtualised environments using Wireshark and OWASP ZAP.</li>
+                <li>Carried out basic penetration testing and security audits in controlled, task-based environments.</li>
+                <li>Wrote technical documentation for security awareness and risk evaluation.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <p class="timeline-when mono">Dec 2025 – Mar 2026</p>
+            <div>
+              <h4>Network Technician (intern)</h4>
+              <p class="muted">Guzzer Technologies (G-Tech) · Nakuru</p>
+              <p>Assigned to the Wananchi Group (Zuku) project. Installed, configured and troubleshot fibre-to-the-home (FTTH) connections for Zuku customers across the Nakuru region.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="sub-label mono">Education</h3>
+        <ol class="timeline">
+          <li>
+            <p class="timeline-when mono">2026 – 2029</p>
+            <div>
+              <h4>Bachelor's degree, Computer Science</h4>
+              <p class="muted">Mount Kenya University</p>
+            </div>
+          </li>
+
+          <li>
+            <p class="timeline-when mono">2024 – 2026</p>
+            <div>
+              <h4>Diploma, Computer Science</h4>
+              <p class="muted">Chuka University</p>
+              <p>Programming, computer systems, networking, databases and software development, with practical coursework and projects. This is where my interest in cybersecurity and cloud security started.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ============================== 4. SKILLS & TOOLS ============================== -->
+    <!-- Each group lists the skill and, in mono, where I've actually used it.
+         Keep it honest: only add a tool once there's somewhere to point to. -->
+    <section id="skills" class="section wrap" aria-labelledby="skills-h">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">03</span>
+        <h2 id="skills-h">Skills and tools</h2>
+      </header>
+
+      <div class="section-body">
+        <p class="section-intro muted">Grouped by area. The note beside each one says where I've used it: TryHackMe rooms, my own projects, internships or coursework.</p>
+
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Detection and response</h3>
+            <dl>
+              <div><dt>Wazuh SIEM</dt><dd>home-soc-lab</dd></div>
+              <div><dt>Sysmon telemetry</dt><dd>home-soc-lab</dd></div>
+              <div><dt>Alert triage</dt><dd>tryhackme · home-soc-lab</dd></div>
+              <div><dt>MITRE ATT&amp;CK mapping</dt><dd>tryhackme · home-soc-lab</dd></div>
+              <div><dt>SIEM basics: QRadar, Splunk</dt><dd>tryhackme · coursework</dd></div>
+              <div><dt>Incident response fundamentals</dt><dd>tryhackme · coursework</dd></div>
+            </dl>
+          </div>
+
+          <div class="skill-group">
+            <h3>Networking</h3>
+            <dl>
+              <div><dt>Networking and subnetting</dt><dd>tryhackme · coursework</dd></div>
+              <div><dt>Wireshark, packet analysis</dt><dd>tryhackme · Future Interns</dd></div>
+              <div><dt>Nmap enumeration</dt><dd>tryhackme · writeups</dd></div>
+              <div><dt>Isolated lab networks</dt><dd>home-soc-lab</dd></div>
+              <div><dt>FTTH install and troubleshooting</dt><dd>G-Tech</dd></div>
+            </dl>
+          </div>
+
+          <div class="skill-group">
+            <h3>Web and offensive basics</h3>
+            <dl>
+              <div><dt>Vulnerability assessment</dt><dd>tryhackme · Future Interns</dd></div>
+              <div><dt>Threat modelling</dt><dd>Future Interns</dd></div>
+              <div><dt>OWASP ZAP</dt><dd>Future Interns</dd></div>
+              <div><dt>IDOR and access control</dt><dd>tryhackme · incident-214</dd></div>
+              <div><dt>Cookie and client-side trust flaws</dt><dd>tryhackme · incident-214</dd></div>
+              <div><dt>Anonymous FTP abuse</dt><dd>tryhackme</dd></div>
+              <div><dt>Cron-based privilege escalation</dt><dd>tryhackme</dd></div>
+            </dl>
+          </div>
+
+          <div class="skill-group">
+            <h3>Systems and tooling</h3>
+            <dl>
+              <div><dt>Linux and Bash</dt><dd>tryhackme · incident-214</dd></div>
+              <div><dt>Kali, Ubuntu Server, Windows 10</dt><dd>home-soc-lab</dd></div>
+              <div><dt>VirtualBox</dt><dd>home-soc-lab</dd></div>
+              <div><dt>CyberChef, log analysis</dt><dd>tryhackme · incident-214</dd></div>
+              <div><dt>Git and GitHub Actions</dt><dd>incident-214</dd></div>
+            </dl>
+          </div>
+
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <dl>
+              <div><dt>Python scripting</dt><dd>writeups</dd></div>
+              <div><dt>Shell scripting</dt><dd>incident-214</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================== 5. PROJECTS & LABS ============================== -->
+    <!-- Each project: title, meta tags, then Problem / Approach / Outcome.
+         Copy an <article class="project"> block to add another. -->
+    <section id="projects" class="section wrap" aria-labelledby="projects-h">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">04</span>
+        <h2 id="projects-h">Projects and labs</h2>
+      </header>
+
+      <div class="section-body">
+
+        <!-- Project: Home SOC Lab -->
+        <article class="project">
+          <header class="project-head">
+            <h3><a href="https://github.com/whsb3ne/home-soc-lab">Home SOC Lab</a></h3>
+            <ul class="tags" aria-label="Tags">
+              <li>Wazuh</li><li>Sysmon</li><li>MITRE ATT&amp;CK</li><li>VirtualBox</li>
+            </ul>
+          </header>
+          <dl class="pao">
+            <div>
+              <dt>Problem</dt>
+              <dd>I wanted to see detection from the analyst's side: what an attack looks like in telemetry, and how alerts are triaged, instead of only reading about it.</dd>
+            </div>
+            <div>
+              <dt>Approach</dt>
+              <dd>Built an isolated VirtualBox network with a Wazuh manager on Ubuntu Server, a Windows 10 endpoint running Sysmon, and Kali Linux as the attacking machine. Ran test activity from Kali and investigated the results in the Wazuh dashboard.</dd>
+            </div>
+            <div>
+              <dt>Outcome</dt>
+              <dd>Phase 1 is complete. The first test raised a level 15 alert (executable dropped in a folder commonly used by malware) and a level 12 alert (PowerShell spawning PowerShell with a Base64-encoded command). I mapped these to <span class="mono">T1059.001</span> and <span class="mono">T1105</span>. Next: Linux endpoint monitoring, repeatable attack simulations and IR playbooks.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- Project: Incident 2:14 CTF -->
+        <article class="project">
+          <header class="project-head">
+            <h3><a href="https://github.com/whsb3ne/incident-214">Incident 2:14, a beginner CTF</a></h3>
+            <ul class="tags" aria-label="Tags">
+              <li>CTF design</li><li>Log analysis</li><li>Web security</li><li>GitHub Actions</li>
+            </ul>
+          </header>
+          <dl class="pao">
+            <div>
+              <dt>Problem</dt>
+              <dd>Students at GDG on Campus, Mount Kenya University needed a first CTF that took them from "what is a terminal?" to reading an authentication log in one evening.</dd>
+            </div>
+            <div>
+              <dt>Approach</dt>
+              <dd>Co-designed with Yvonne (@Moseti-suddo): a story around an unrecognised login at a fictional company, split into two chapters. Seven challenges cover Base64, Linux basics, auth-log timelines, then IDOR, exposed files and cookie tampering on a staging web portal. A CI script checks every challenge is still solvable without printing any flag.</dd>
+            </div>
+            <div>
+              <dt>Outcome</dt>
+              <dd>It now runs every week for GDG on Campus, with new chapters added as the story continues. The repository is public under MIT, with official write-ups for players.</dd>
+              <!-- PLACEHOLDER (optional): number of participants or teams, if you have the figure -->
+            </div>
+          </dl>
+        </article>
+
+        <!-- Project: Cybersecurity write-ups -->
+        <article class="project">
+          <header class="project-head">
+            <h3><a href="https://github.com/whsb3ne/cybersecurity-writeups">Cybersecurity write-ups and lab journal</a></h3>
+            <ul class="tags" aria-label="Tags">
+              <li>TryHackMe</li><li>PCAP analysis</li><li>Python</li>
+            </ul>
+          </header>
+          <dl class="pao">
+            <div>
+              <dt>Problem</dt>
+              <dd>Finishing a room teaches something only if I can explain it afterwards. I wanted a record of my reasoning that others could follow.</dd>
+            </div>
+            <div>
+              <dt>Approach</dt>
+              <dd>A structured archive with a write-up template. A Python script reads each write-up's frontmatter and rebuilds the index table, and a GitHub Action runs it on every push.</dd>
+            </div>
+            <div>
+              <dt>Outcome</dt>
+              <dd>First write-up published: TryHackMe <em>Startup</em> (anonymous FTP, PCAP analysis, cron privilege escalation). Kenobi and picoCTF forensics are next on the roadmap.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- Project: RBAC system (public repo) -->
+        <article class="project">
+          <header class="project-head">
+            <h3><a href="https://github.com/whsb3ne/rbac-system">Role-based access control system</a></h3>
+            <ul class="tags" aria-label="Tags">
+              <li>PHP</li><li>MySQL</li><li>RBAC</li><li>Audit logging</li>
+            </ul>
+          </header>
+          <dl class="pao">
+            <div>
+              <dt>Problem</dt>
+              <dd>Small organisations, clubs and teams need user accounts where people only see and do what their role allows, and where an admin can check who did what.</dd>
+            </div>
+            <div>
+              <dt>Approach</dt>
+              <dd>A PHP and MySQL web app with three roles: Admin, Editor and Viewer. Every protected page checks the session role before it loads. Passwords are hashed with <span class="mono">password_hash()</span>, queries use prepared statements, and password resets use random tokens that expire after an hour. Logins are recorded with IP address and time, and uploads, edits and deletions go to an audit log only admins can view.</dd>
+            </div>
+            <div>
+              <dt>Outcome</dt>
+              <dd>A working system with user management (promote, demote, deactivate), file uploads, login history, an admin dashboard and a one-step database setup script. I built it during my diploma at Chuka University in 2025.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- Project: Scholarax RBAC. The repo is private, so the title is not a link.
+             If you make it public, wrap the title in <a href="https://github.com/whsb3ne/scholarax">. -->
+        <article class="project">
+          <header class="project-head">
+            <h3>Scholarax: role-based access control for a school system</h3>
+            <ul class="tags" aria-label="Tags">
+              <li>RBAC</li><li>NestJS</li><li>PostgreSQL</li><li>Multi-tenant</li>
+            </ul>
+          </header>
+          <dl class="pao">
+            <div>
+              <dt>Problem</dt>
+              <dd>A school management system holds grades, attendance, medical records and fee payments for several campuses. Owners, administrators, teachers, bursars, parents and students each need a different slice of that data, and no one should reach another campus.</dd>
+            </div>
+            <div>
+              <dt>Approach</dt>
+              <dd>I built the access layer of a NestJS, Prisma and PostgreSQL backend. Each campus gets six standard roles, and endpoints declare the roles they allow. The guard denies access whenever it can't confirm a role. Every check goes through one normalisation function, so an alias like "admin" or "staff" can't mean different things in different places. Teachers only reach the streams they're assigned to, parents only their own children, and campus scoping is applied to database queries. Sessions use HttpOnly cookies with CSRF tokens, and the live user and roles are re-checked on each request.</dd>
+            </div>
+            <div>
+              <dt>Outcome</dt>
+              <dd>Role checks sit on 28 API controllers. Regression tests cover role denial, expired tokens, disabled accounts, cross-campus token reuse and tenant isolation. I also wrote down the gaps that are still open, such as database row-level security not yet being the active boundary. The project is in active development, and the repository is private.</dd>
+            </div>
+          </dl>
+        </article>
+
+
+      </div>
+    </section>
+
+
+    <!-- ============================== 6. CERTIFICATIONS & LEARNING PATH ============================== -->
+    <section id="learning" class="section wrap" aria-labelledby="learning-h">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">05</span>
+        <h2 id="learning-h">Certifications and learning path</h2>
+      </header>
+
+      <div class="section-body">
+        <div class="path">
+          <div class="path-col">
+            <h3 class="path-label mono">Held</h3>
+            <ul class="path-list">
+              <li>
+                <a href="https://tryhackme.com/certificate/THM-GBRMW3D27H">Cyber Security 101</a>
+                <span class="muted mono">TryHackMe · Oct 2026 · valid to Oct 2029</span>
+              </li>
+              <li>
+                <a href="https://www.futureinterns.com/verification/?cin=FIT/MAR26/CS6727">Cyber Security</a>
+                <span class="muted mono">Future Interns · Mar 2026</span>
+              </li>
+              <li>
+                <a href="https://www.coursera.org/account/accomplishments/verify/GRWR48X99PH8">Foundations of Cybersecurity</a>
+                <span class="muted mono">Google, via Coursera · Oct 2025</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="path-col">
+            <h3 class="path-label mono">In progress</h3>
+            <ul class="path-list">
+              <li>
+                <span>Google Cybersecurity Professional Certificate</span>
+                <span class="muted mono">Google, via Coursera</span>
+                <!-- PLACEHOLDER (optional): progress, e.g. "Course 3 of 8" or expected finish month -->
+              </li>
+              <li>
+                <span>CompTIA Security+</span>
+                <span class="muted mono">CompTIA</span>
+              </li>
+              <li>
+                <span>Blue Team Level 1 (BTL1)</span>
+                <span class="muted mono">Security Blue Team</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================== 7. CONTACT ============================== -->
+    <section id="contact" class="section wrap contact" aria-labelledby="contact-h">
+      <header class="section-head">
+        <span class="section-index" aria-hidden="true">06</span>
+        <h2 id="contact-h">Contact</h2>
+      </header>
+
+      <div class="section-body">
+        <p class="contact-lead">
+          I'm open to internships and entry-level security or network roles. The fastest way to reach me is by phone.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="mono contact-key">phone</span>
+            <a href="tel:+254790796939">0790 796 939</a>
+          </li>
+          <li>
+            <span class="mono contact-key">email</span>
+            <a href="mailto:benedictkaraya132@gmail.com">benedictkaraya132@gmail.com</a>
+          </li>
+          <li>
+            <span class="mono contact-key">linkedin</span>
+            <a href="https://www.linkedin.com/in/benedictkaraya132">in/benedictkaraya132</a>
+          </li>
+          <li>
+            <span class="mono contact-key">github</span>
+            <a href="https://github.com/whsb3ne">github.com/whsb3ne</a>
+          </li>
+          <li>
+            <span class="mono contact-key">tryhackme</span>
+            <a href="https://tryhackme.com/p/whsb3ne">tryhackme.com/p/whsb3ne</a>
+          </li>
+          <li>
+            <span class="mono contact-key">location</span>
+            <span>Nairobi County, Kenya</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="mono">© <span id="year">2026</span> Benedict Kevin Karaya</p>
+      <p class="mono muted">Plain HTML, CSS and JS. No trackers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
