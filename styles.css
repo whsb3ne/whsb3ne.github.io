@@ -230,20 +230,31 @@ a:hover { text-decoration: underline; }
 /* ---------- About: portrait + text ---------- */
 .about-grid { display: grid; gap: var(--s6); }
 .portrait {
-  position: relative; width: 100%; max-width: 13rem; aspect-ratio: 4 / 5;
-  background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius);
-  overflow: visible;
+  position: relative; width: 100%; max-width: 15rem; aspect-ratio: 1;
+  margin-inline: auto;
 }
-.portrait img {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; border-radius: var(--radius);
-  filter: saturate(0.85);
-}
-.portrait.is-empty img { display: none; }
+/* Circular crop of the 4:5 photo: 120% wide shows the centre 400px of 480, from the top */
+.portrait-photo { position: absolute; inset: 9%; border-radius: 50%; overflow: hidden; }
+.portrait-photo img { display: block; width: 120%; max-width: none; height: auto; margin-left: -10%; }
 .portrait-fallback {
   position: absolute; inset: 0; display: grid; place-items: center;
   font-family: var(--font-mono); font-size: 2rem; letter-spacing: 0.1em; color: var(--line-strong);
 }
+.portrait.is-empty .portrait-fallback { inset: 9%; border-radius: 50%; background: var(--bg-raised); border: 1px solid var(--line); }
+.portrait:not(.is-empty) .portrait-fallback { display: none; }
+.portrait.is-empty img { display: none; }
+/* Reticle frame: thin teal ring, degree ticks, crosshair notches, one slow scanning arc */
+.portrait-frame { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.portrait-frame * { fill: none; vector-effect: non-scaling-stroke; }
+.pf-ring  { stroke: var(--accent); stroke-width: 1; opacity: 0.55; }
+.pf-ticks { stroke: var(--line-strong); stroke-width: 1; }
+.pf-cross { stroke: var(--accent); stroke-width: 1.5; }
+.pf-scan  {
+  stroke: var(--accent); stroke-width: 1.5; stroke-linecap: round; vector-effect: none;
+  stroke-dasharray: 60 600; transform-origin: 100px 100px;
+  animation: pf-sweep 9s linear infinite;
+}
+@keyframes pf-sweep { to { transform: rotate(360deg); } }
 
 /* ---------- Timeline (education and background) ---------- */
 .timeline { display: grid; gap: var(--s6); max-width: 46rem; }
@@ -403,7 +414,7 @@ a:hover { text-decoration: underline; }
   }
 
   .skills { grid-template-columns: repeat(2, 1fr); gap: var(--s7) var(--s8); }
-  .about-grid { grid-template-columns: minmax(0, 1fr) 15rem; align-items: start; gap: var(--s8); }
+  .about-grid { grid-template-columns: minmax(0, 1fr) 17rem; align-items: center; gap: var(--s7); }
   .about-grid .prose { grid-row: 1; grid-column: 1; }
   .portrait { grid-row: 1; grid-column: 2; max-width: none; }
 }
